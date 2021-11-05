@@ -4,7 +4,7 @@ var swLocation = '/Twittor/sw.js';
 if(navigator.serviceWorker){
     if(url.includes('localhost')){
         swLocation='/sw.js';
-    
+    }
     navigator.serviceWorker.register(swLocation);
 }
 
@@ -131,4 +131,3 @@ postBtn.on('click', function() {
     crearMensajeHTML( mensaje, usuario );
 
 });
-}
